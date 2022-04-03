@@ -30,8 +30,6 @@ const init = function () {
   player0El.classList.remove('player--winner');
   player1El.classList.remove('player--winner');
   player0El.classList.add('player--active');
-  // no need to remove active-player class from player 0 because at the begineeing of the game, player 0 is
-  // the active player in the game. Instead we add the 'player--active' class to player0
   player1El.classList.remove('player--active');
   document.getElementById(`name--0`).textContent = `Player 1`;
   document.getElementById(`name--1`).textContent = `Player 2`;
@@ -91,5 +89,4 @@ btnHold.addEventListener('click', function () {
   }
 });
 
-// reset functionality
 btnNew.addEventListener('click', init);
